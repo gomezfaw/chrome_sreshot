@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "SREshot",
+  "description": "Simple Extension to make screenshots",
+  "version": "0.0.1",
+  "offline_enabled": true,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx8ufRAv+wwWVktGaPhIbjDN4r6yjXL5KCV2wq7QHOqzYHCPQN4zmdsOawGVvdQ/fxCeEphmQLL9qnUarokq+nGiv4fS8jRfaQN866NhiFFMOFd3w3PMm1OX63bIGTMVaGNk75VhtJw8GDMzAStEiOzyjQVory94Mo3AereKoYi305jR/SiCvxmnyZnmY4tODKZkuuqHLy8AsGtFS35QI1BGJsDTYvY70bolyx5VcKe3v4nNWuYNFFay7NBI9azn93g+UwJACibanJZQ6nh9FX4JxS0z51TgeUdxR2C46FKrOwHWigQn9waedqnSDWgFAbCq8HV8S2pphuUEmGtieqwIDAQAB",
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "icons": {
+    "128": "data/icons/128x128.png"
+  },
+  "options_ui": {
+    "page": "data/options/index.html"
+  },
+  "action": {
+    "default_popup": "data/popup/index.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "description": "Press the action button"
+    },
+    "captureArea": {
+      "description": "Capture area",
+      "suggested_key": "Alt+S"
+    }
+  },
+  "oauth2": {
+    "client_id": "936027930471-nqj7dro8c6efgstt53njr4smum36hiau.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.appdata",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  },
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "downloads",
+    "notifications",
+    "storage",
+    "clipboardWrite",
+    "identity"
+  ]
+}
